@@ -1,0 +1,182 @@
+/*px is abosulute units
+rem is an relative units based on html root element size
+em is also an relative units based on parent element not in html root elements
+*/
+/*--FONT-SIZES PX
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128*/
+
+/***************************************
+/1400px smaller desktops/
+/*****************************************/
+@media (max-width:88em){
+    .hero{
+        max-width: 120rem;
+    }
+    .heading-primary{
+        font-size: 4.4rem;
+    }
+}
+
+/***************************************
+/1200px landscape desktops/
+/*****************************************/
+@media (max-width:75em){
+    /* 9px /16px*/
+    html{
+        font-size: 56.25%;
+    }
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+      }
+    .heading-secondary{
+        font-size: 3.2rem;
+    }
+}
+
+/************************************/
+/* 944 px tablets*/
+/************************************/
+@media (max-width:59em){
+     /* 8px /16px*/
+    html{
+        font-size: 50%;
+    }
+    .grid--cols-4{
+        grid-template-columns: repeat(2, 1fr);
+    }  
+    .service-box{
+        row-gap: 7.4rem;
+    }
+    .project-box{
+        row-gap: 7.4rem;
+    }
+    .hero {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4.6rem;
+    }
+
+    /*mobile navigation*/
+    .btn-mobile-nav {
+        display: block;
+    }
+
+    .main-nav{
+        background-color: #fff;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in;
+        /*needs to move horizontaly hide navigation*/
+        transform: translateX(100%);
+        /*hide naviagtion
+        allows no transition at all
+        display:none
+        */
+        /*1. hide this visually*/
+        opacity: 0;
+        /*2. no unaccessible to mouse events and keyboard evnt*/
+        pointer-events: none;
+        /*3. hide to screen readers*/
+        visibility: hidden;
+    }
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .nav-open .main-nav {
+        opacity: 1;
+        transform: translateX(0%);
+        pointer-events: auto;
+        visibility: visible;
+
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+}
+
+/*********************************/
+/*Below 704px (smaller tablets)*/
+/*********************************/
+
+@media(max-width:44em){
+    .grid--cols-2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .aboutus-img-box{
+        grid-row: 1;
+    }
+    .grid{
+        row-gap: 11.4rem;
+    }
+    .quality-grid{
+        row-gap: 24.2rem;
+    }
+    .testimonial--container{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .nav-col{
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+    .address-col,.logo-col{
+        grid-column: span 3;
+    }
+    .nav-col{
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+    .address-col,.logo-col{
+        grid-column: span 3;
+    }
+    .testimonial-img{
+        width: 70%;
+    }
+
+}
+
+
+
+
+/*********************************/
+/*Below 544px (phones)*/
+/*********************************/
+
+@media(max-width:34em){
+    .grid--cols-4,.grid--cols-3  {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container-letter{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4.3rem;
+    }
+    .showcase-container {
+        row-gap: 4.3rem;
+    }
+}
