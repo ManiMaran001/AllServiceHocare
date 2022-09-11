@@ -1,7 +1,8 @@
 
 <div align="center">
-  <h1>Jio Clone Webite</h1>
-  [live preview](https://jio-clone-app.vercel.app/)
+  <h1>All Home service website</h1>
+  <h3>please see the website in live preview deployed in netlify</h3>
+  [live preview](https://servicecares.netlify.app/)
 </div>
 Don't forget to ⭐ the repo if you like it 😊:
 <br/>
