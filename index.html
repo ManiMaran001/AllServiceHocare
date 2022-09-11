@@ -15,14 +15,14 @@
 </head>
 
 <body>
-  <header class="header sticky">
-    <a href="#"><img class="logo" src="./content/minilogo.png" alt="logo" /></a>
+  <header class="header" id="home">
+    <a href="#home"><img class="logo" src="./content/minilogo.png" alt="logo" /></a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li class="main-nav-link">Home</li>
-        <li class="main-nav-link">Aboutus</li>
-        <li class="main-nav-link">Pages</li>
-        <li class="main-nav-link nav-cta">Contact us</li>
+        <li><a href="#services" class="main-nav-link"> Our Services</a></li>
+        <li><a href="#aboutus" class="main-nav-link"> Aboutus</a></li>
+        <li><a href="#work" class="main-nav-link"> Our Works</a></li>
+        <li><a href="#contact" class="main-nav-link nav-cta"> Contact us</a></li>
       </ul>
     </nav>
     <button class="btn-mobile-nav">
@@ -32,7 +32,7 @@
   </header>
 
 
-  <section>
+  <section class="section">
     <div class="section-hero">
       <div class="hero">
         <div class="hero-text-box">
@@ -40,12 +40,14 @@
             Exquisite Home Service
           </h1>
           <p class="hero-description">
-            An habitually engaged to do work eleganfull claenliness customer caring person we us
+            An habitually engaged to do work elegant full allegiance, work we provide us 
+<!-- An habitually engaged to do work elegans full sanitation customer caring person we us -->
+
           </p>
-          <a href="#" class="btn btn--full margin-right-sm ">
+          <a href="#contact" class="btn btn--full margin-right-sm ">
             Call us Now
           </a>
-          <a href="#" class="btn btn--outline">
+          <a href="#home" class="btn btn--outline">
             Learn More &darr;
           </a>
           <div class="delivered-service">
@@ -58,7 +60,7 @@
               <img src="./content/customers/customer-6.jpg" alt="customer photo" />
             </div>
             <p class="delivered-text">
-              <span>250,000+ </span>services organized last year
+              <span>250,000+ </span>services concluded last year
             </p>
           </div>
         </div>
@@ -79,7 +81,7 @@
 
 
 
-  <section class="section-services">
+  <section class="section section-services"  id="services">
     <div class="container">
       <span class="subHeading">Our Services</span>
       <h2 class="heading-secondary">
@@ -94,9 +96,8 @@
           </header>
           <h3 class="heading-tertiary">Ac Service</h3>
           <p class="service-description">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Ut elit tellus pulvinar dapibus leo.
+           
+Regular AC servicing can boost AC performance and reduce electricity bills effectively.
           </p>
           <a href="#" class="btn btn--full">
             Learn More
@@ -108,9 +109,7 @@
           </header>
           <h3 class="heading-tertiary">Plumber</h3>
           <p class="service-description">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Ut elit tellus pulvinar dapibus leo.
+Regular plumbing maintenance can prevent cross-contamination,safe at all times.
           </p>
           <a href="#" class="btn btn--full">
             Learn More
@@ -122,9 +121,7 @@
           </header>
           <h3 class="heading-tertiary">Electrician</h3>
           <p class="service-description">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Ut elit tellus pulvinar dapibus leo.
+            To get an accurate and free estimate, research and contact professional electricians
           </p>
           <a href="#" class="btn btn--full">
             Learn More
@@ -136,9 +133,7 @@
           </header>
           <h3 class="heading-tertiary">Home Repair</h3>
           <p class="service-description">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Ut elit tellus pulvinar dapibus leo.
+            preventive repair done on assets to prevent damage and prolong the life expectancy. 
           </p>
           <a href="#" class="btn btn--full ">
             Learn More
@@ -150,18 +145,16 @@
 
 
 
-  <section class="section-aboutus">
+  <section class="section section-aboutus" id="aboutus">
     <div class="container">
-      <div class="grid grid--cols-2">
+      <div class="grid grid--cols-2 about-container">
         <div class="aboutus-text-box">
           <span class="subHeading">About Us</span>
           <h2 class="heading-secondary margin-bottom-lg">
             Repairs And Maintenance You Call It
           </h2>
           <p class="about-description">
-            Morbi tempus purus vel tellus hendrerit porttitor. Cras blandit odio urna, ac hendrerit turpis dignissim et.
-            In
-            at eros porttitor, blandit ligula id, ornare nibh. Phasellus ut lectus ligula. Fusce pharetra erat lorem, at
+            Repairs are restoration work for when an asset breaks, gets damaged, or stops working. Maintenance refers to routine activities and/or corrective or preventive repair done on assets to prevent damage and prolong the life expectancy.
           </p>
           <a href="#" class="btn btn--full ">
             Contact Us
@@ -170,8 +163,8 @@
         <div class="aboutus-img-box">
           <img src="./content/Pages/round-logo.png" alt="round-lg" class="about about-img-round-lg" />
           <img src="./content/Pages/round-logo.png" alt="round-sm" class="about about-img-round-sm" />
-          <img src="./content/Pages/aboutus1.jpg" alt="aboutus-img1" class="aboutus-img-lg" />
-          <img src="./content/Pages/aboutus2.jpg" alt="aboutus-img2" class="about aboutus-img-sm" />
+          <img src="./content/Pages/aboutus1-lazy.jpg" data-src="./content/Pages/aboutus1.jpg" alt="aboutus-img1" class="aboutus-img-lg lazy-img" />
+          <img src="./content/Pages/aboutus2-lazy.jpg" data-src="./content/Pages/aboutus2.jpg" alt="aboutus-img2" class="about aboutus-img-sm lazy-img" />
         </div>
       </div>
     </div>
@@ -179,21 +172,20 @@
   </section>
 
 
-  <section class="section-quality">
+  <section class="section section-quality">
     <div class="container-lg center-text ">
       <h2 class="heading-secondary margin-bottom-lg">
         Quality Work Every Time
       </h2>
       <p class="about-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-        dapibus leo.
+        quality work is work that meets all requirements, meets completion expectations and presents accurate information.
       </p>
     </div>
     <div class="container quality-grid grid--cols-2">
       <div class="quality-img-box">
         <img src="./content/Pages/round-logo.png" alt="round-lg" class="about quality-img-round-lg" />
         <img src="./content/Pages/round-logo.png" alt="round-sm" class="about quality-img-round-sm" />
-        <img src="./content/Pages/Quality.jpg" class="quality-img-lg" />
+        <img src="./content/Pages/Quality-lazy.png"  data-src="./content/Pages/Quality.jpg"  class="quality-img-lg lazy-img" />
       </div>
       <div class="quality-text-box">
         <h3 class="heading-tertiary">Why Choose Us</h3>
@@ -223,34 +215,33 @@
     </div>
   </section>
 
-  <section class="section-works">
+  <section class="section section-works" id="work">
     <div class="container-lg center-text">
       <h2 class="heading-secondary margin-bottom-lg">
         Our Works
       </h2>
       <p class="about-description">
-        Aliquam erat volutpat. Aliquam maximus ullamcorper nulla quis lacinia. Proin ligula nibh, eleifend in dui sed,
-        laoreet consectetur ligula.
+        quality works assurance to do effectively plans and operations done by us
       </p>
     </div>
     <div class="container work-box grid--cols-3">
       <div class="works-card">
-        <img src="./content/works/work1.jpg" alt="card-1" class="work-img" />
+        <img src="./content/works/work1-lazy.jpg" data-src="./content/works/work1.jpg" alt="card-1" class="work-img lazy-img " />
         <p class="work-description">01. Bathtub Plumbing</p>
       </div>
       <div class="works-card">
-        <img src="./content/works/work2.jpg" alt="card-1" class="work-img" />
+        <img src="./content/works/work2-lazy.jpg"data-src="./content/works/work2.jpg" alt="card-1" class="work-img lazy-img" />
         <p class="work-description">02. Electrical Wiring</p>
       </div>
       <div class="works-card">
-        <img src="./content/works/work3.jpg" alt="card-1" class="work-img" />
+        <img src="./content/works/work3-lazy.jpg" data-src="./content/works/work3.jpg" alt="card-1" class="work-img lazy-img" />
         <p class="work-description">03. AC Instalation
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section-info">
+  <section class="section section-info">
     <div class="container project-box grid--cols-4">
       <div class="project-card">
         <div class="project">
@@ -290,7 +281,7 @@
   </section>
 
 
-  <section class="section-testimonial">
+  <section class="section section-testimonial">
     <div class="container">
       <span class="subHeading">Testimonial</span>
       <h2 class="heading-secondary">
@@ -299,15 +290,12 @@
     </div>
     <div class="container testimonial--container">
       <div class="testimonial-img-box">
-        <img src="./content/Pages/testimonial.jpg" alt="test1" class="testimonial-img" />
+        <img src="./content/Pages/testimonial-lazy.png" data-src="./content/Pages/testimonial.jpg" alt="test1" class="testimonial-img lazy-img" />
       </div>
       <div class="testimonial-text">
         <img src="./content/Pages/testLLogo.png" alt="test2" class="testimonial-logo" />
         <blockquote>
-          ” Aliquam erat volutpat. Aliquam maximus ullamcorper nulla quis lacinia. Proin ligula nibh, eleifend in dui
-          sed, laoreet consectetur ligula. Sed tristique vehicula faucibus. Donec at lorem orci. Etiam malesuada
-          sagittis libero, vulputate scelerisque turpis rutrum quis. Cras cursus turpis nec mi ultrices, sit amet
-          ullamcorper sapien dignissim. “
+          ” I have received very good service from them, the best thing about them is that these people understand us very well what service we need. 🆒 We do not adjust any service for the sake of more money and he is quite honest in his work.  “
         </blockquote>
         <div class="ratings">
           <span>4.4</span>
@@ -316,49 +304,44 @@
           <ion-icon name="star-half-outline" class="rating-icon"></ion-icon>
           <ion-icon name="star-half-outline" class="rating-icon"></ion-icon>
         </div>
-        <p class="customer-name">Elizabeth Hawkins</p>
-        <p class="manager-name">Manager
-        </p>
+        <p class="customer-name">PriyaBhavani</p>
+        <p class="manager-name">Customer</p>
       </div>
     </div>
   </section>
 
-  <section class="section-showcase">
+  <section class="section section-showcase">
     <div class="container showcase-container grid--cols-3">
       <div class="showcase-card">
-        <img src="./content/showcase/show1.jpg" alt="showcase1" class="shwocase-img" />
+        <img src="./content/showcase/show1-lazy.jpg"data-src="./content/showcase/show1.jpg" alt="showcase1" class="shwocase-img lazy-img" />
         <div class="showcase-box">
           <header class="showcase-head">The Service You Deserve</header>
           <p class="showcase-description">
-            Donec mattis, nisi sit amet pharetra mollis, mi lorem consectetur augue, vel aliquet leo ipsum sit amet
-            neque. Donec interdum nunc quis leo euismod, a vestibulum ligula elementum. Suspendisse luctus purus ut
-            commodo convallis.
+            To give real service you must add something which cannot be bought or measured with money, and that is sincerity and integrity
           </p>
           <a href="#" class="showcase-btn">read more</a>
         </div>
         </p>
       </div>
       <div class="showcase-card">
-        <img src="./content/showcase/show2.jpg" alt="showcase1" class="shwocase-img" />
+        <img src="./content/showcase/show2-lazy.jpg" data-src="./content/showcase/show2.jpg" alt="showcase1" class="shwocase-img lazy-img" />
         <div class="showcase-box">
-          <header class="showcase-head">The Service You Deserve</header>
+          <header class="showcase-head">The Home Repair Experts</header>
           <p class="showcase-description">
-            Donec mattis, nisi sit amet pharetra mollis, mi lorem consectetur augue, vel aliquet leo ipsum sit amet
-            neque. Donec interdum nunc quis leo euismod, a vestibulum ligula elementum. Suspendisse luctus purus ut
-            commodo convallis.
+            No more hunting for receipts, service orders or warranty information. All of your home maintenance records and product information are in one, easy-to-access spot.
           </p>
           <a href="#" class="showcase-btn">read more</a>
         </div>
         </p>
       </div>
       <div class="showcase-card">
-        <img src="./content/showcase/show3.jpg" alt="showcase1" class="shwocase-img" />
+        <img src="./content/showcase/show3-lazy.jpg" data-src="./content/showcase/show3.jpg" alt="showcase1" class="shwocase-img lazy-img" />
         <div class="showcase-box">
-          <header class="showcase-head">The Service You Deserve</header>
+          <header class="showcase-head">Repair Is Our Passion</header>
           <p class="showcase-description">
-            Donec mattis, nisi sit amet pharetra mollis, mi lorem consectetur augue, vel aliquet leo ipsum sit amet
-            neque. Donec interdum nunc quis leo euismod, a vestibulum ligula elementum. Suspendisse luctus purus ut
-            commodo convallis.
+            Our Service Department performs thousands of metal stitching
+            and oven welding repairs every year. Casting repair is our
+            business and our passion.
           </p>
           <a href="#" class="showcase-btn">read more</a>
         </div>
@@ -368,7 +351,7 @@
   </section>
 
 
-  <section class="section-newsLetter">
+  <section class="section section-newsLetter" id="contact">
     <div class="container container-letter">
       <div class="container-roll">
         <p class="roll-letter">Newsletter</p>
@@ -390,7 +373,7 @@
     <div class="container">
       <div class="footer-container">
         <div class="logo-col">
-          <a href="#">
+          <a href="#home">
             <img src="./content/minilogo.png" alt="logo" class="footer-logo" />
           </a>
           <ul class="social-links">
@@ -415,15 +398,12 @@
               ></a>
             </li>
           </ul>
-          <p class="copyright">
-            copyright &copy; 2022 by Ho Care, Inc. All rights reserved.
-          </p>
         </div>
         <div class="nav-col">
           <p class="footer-heading">Service</p>
           <ul class="footer-nav">
             <li><a href="#" class="footer-link">Installation</a></li>
-            <li ><a href="#" class="footer-link">Reparation</a></li>
+            <li ><a href="#" class="footer-link">Repairas</a></li>
             <li ><a href="#" class="footer-link">Contact</a></li>
           </ul>
         </div>
@@ -431,7 +411,7 @@
           <p class="footer-heading">Further Links</p>
           <ul class="footer-nav">
             <li class="footer-link"><a href="#" class="footer-link">Term & Condition</a></li>
-            <li class="footer-link"><a href="#" class="footer-link">List Of Job</a></li>
+            <li class="footer-link"><a href="#" class="footer-link">List of Job</a></li>
             <li class="footer-link"><a href="#" class="footer-link">News</a></li>
           </ul>
         </div>
@@ -439,15 +419,18 @@
           <p class="footer-heading">Get In Touch</p>
           <address class="contacts">
             <p class="address">
-              Address: 623 Harrison St., 2nd Floor, San Francisco, CA 94107
+              Address: 46 Gandhi Road St., 2nd Floor, Mannacanallur Trichy,
             </p>
             <p>
               <a href="tel:415-201-6370">415-201-6370</a>
-              <a href="mailto:hello@omnifood.com">hello@omnifood.com></a>
+              <a href="mailto:cmmaran102@gmail.com">cmmaran102@gmail.com</a>
             </p>
           </address>
         </div>
       </div>
+      <p class="copyright">
+        copyright &copy; 2022 by Ho Care, Inc. All rights reserved.
+      </p>
     </div>
   </footer>
 
