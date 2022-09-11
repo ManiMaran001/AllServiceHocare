@@ -2,9 +2,11 @@
 <div align="center">
   <h1>All Home service website</h1>
   <h3>please see the website in live preview deployed in netlify</h3>
-  <a href="https://servicecares.netlify.app/">live home service link to see please click this</a>
+⭐⭐⭐ <a href="https://servicecares.netlify.app/">live home service link to see please click this</a>⭐⭐⭐
 </div>
-Don't forget to ⭐ the repo if you like it 😊:
+<div>
+  <p>Don't forget to ⭐ the repo if you like it 😊</p>
+ </div>
 <br/>
 
 
